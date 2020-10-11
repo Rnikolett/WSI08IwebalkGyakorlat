@@ -22,8 +22,7 @@ public class TestServlet extends HttpServlet {
          out.println("<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>");
          out.println("<title>Hello, World</title></head>");
          out.println("<body>");
-         out.println("<h1>Hello, where are you want to book?!</h1>");  // asks the important question
-         out.println("<h2>Hello, World!</h2>");
+         out.println("<h1>Hello, World!</h1>");
          // Echo client's request information
          out.println("<p>Request URI: " + request.getRequestURI() + "</p>");
          out.println("<p>Protocol: " + request.getProtocol() + "</p>");
