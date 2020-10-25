@@ -39,8 +39,10 @@ public class Service implements ReservationService{
 		List<Floor> floors = new ArrayList<Floor>();
 		rooms.add(0,new Room(1, 2, false, BigDecimal.valueOf(500), WingType.EAST));
 		rooms.add(1,new Room(2, 3, false, BigDecimal.valueOf(1500), WingType.EAST));
-		rooms.add(2,new Room(3, 2, false, BigDecimal.valueOf(1000), WingType.WEST));
-		rooms.add(3,new Room(4, 1, false, BigDecimal.valueOf(2000), WingType.EAST));
+		rooms.add(2,new Room(3, 2, false, BigDecimal.valueOf(1000), WingType.EAST));
+		rooms.add(3,new Room(4, 2, false, BigDecimal.valueOf(2000), WingType.NORTH));
+		rooms.add(4,new Room(5, 1, false, BigDecimal.valueOf(1900), WingType.NORTH));
+		rooms.add(5,new Room(6, 3, false, BigDecimal.valueOf(1450), WingType.NORTH));
 		wingeast.add(new Wing(WingType.EAST, rooms.subList(0, 3)));
 		wingnorth.add(new Wing(WingType.NORTH, rooms.subList(3, 6)));
 		floors.add(new Floor(1, wingeast));

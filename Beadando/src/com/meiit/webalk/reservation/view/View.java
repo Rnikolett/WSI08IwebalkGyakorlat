@@ -70,10 +70,7 @@ public class View implements IView {
 
 	@Override
 	public Room selectRoom(List<Hotel> hotels) {
-		if (hotels == null) {
-			System.out.println("There are no rooms!");
-			return null;
-		}
+		
 		boolean done = false;
 		Room rm = null;
 		printRoom(hotels);

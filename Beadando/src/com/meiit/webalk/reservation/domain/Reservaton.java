@@ -16,17 +16,7 @@ public class Reservaton {
 		super();
 	}
 	
-	public Reservaton(String amount, LocalDateTime from, LocalDateTime to, boolean active, boolean processed, String currency,
-			String n) {
-		super();
-		this.amount = amount;
-		this.from = from;
-		this.to = to;
-		this.active = active;
-		this.processed = processed;
-		this.currency = currency;
-		this.name = n;
-	}
+
 	public Reservaton(String name, Room r) {
 		super();
 		this.name = name;
