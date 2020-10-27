@@ -8,7 +8,9 @@ public class BookingPerson extends User{
 	private Integer accountnumber;
 	private BigDecimal balance;
 	private LocalDate birth;
+	//Private
 	Currency currency;
+	//Why? Inheritence? delete pls
 	User u;
 	
 	public BookingPerson(String n, Integer an,BigDecimal ballance, LocalDate birth,Currency c) {
