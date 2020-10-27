@@ -6,10 +6,13 @@ import com.meiit.webalk.reservation.domain.Room;
 import com.meiit.webalk.reservation.service.Service;
 import com.meiit.webalk.reservation.view.View;
 
-
+//Use meaningfull neames
 public class App {
+	//Should be private
 	Service s;
+	//This is not good, delete pls.
 	App app;
+	//Should be private
 	View view;
 	
 
