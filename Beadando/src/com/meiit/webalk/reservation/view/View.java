@@ -69,15 +69,19 @@ public class View implements IView {
 	}
 
 	@Override
+	//Not need to rewrite this is just self improvement
 	public Room selectRoom(List<Hotel> hotels) {
 		
 		boolean done = false;
 		Room rm = null;
 		printRoom(hotels);
 		char c = sc.next().charAt(0);
+		//This while should be in the app and call selectRoom
+		//U can avoid return null.
 		while (!done) {
 			if (c == 'q') {
 				System.out.println("Quit booking;");
+				//Never return null
 				return null;
 			} else {
 				printRoom(hotels);
@@ -91,6 +95,7 @@ public class View implements IView {
 									i++;
 									if (chosen == i) {
 										rm = r;
+										//Return is not need if the logic in the good place 
 										return rm;
 									}
 								}
@@ -100,7 +105,7 @@ public class View implements IView {
 				}
 			}
 		}
-
+		//Thats the only one which placed well.
 		return rm;
 	}
 
