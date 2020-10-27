@@ -19,16 +19,19 @@ public class Service implements ReservationService{
 	private BookingPerson bookingp;
 	private List<Reservaton> reservations= new ArrayList<Reservaton>();
 	private List<Hotel> hotel=new ArrayList<Hotel>();
+	//Why? We only have 1 poerson right now please change based on this
 	private List<BookingPerson> bookingpersons=new ArrayList<BookingPerson>(); 
 	
 	@Override
 	public void saveBookingPerson(BookingPerson bp) {
+		//NOK
 		bookingpersons.add(bp);
 		
 	}
 
 	@Override
 	public BookingPerson findBookingperson() {
+		//NOK
 		return this.bookingpersons.get(0);
 	}
 	@Override
@@ -83,6 +86,7 @@ public class Service implements ReservationService{
 	public void checkOut(Reservaton r) {
 		r.setActive(false);
 		r.setProcessed(true);
+		//Refund calculation should be here
 		
 	}
 	
