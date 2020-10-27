@@ -5,6 +5,7 @@ import java.util.List;
 public class Floor {
 	private int floornumber;
 	private String hotel;
+	//private
 	List <Wing> wing;
 	
 	
