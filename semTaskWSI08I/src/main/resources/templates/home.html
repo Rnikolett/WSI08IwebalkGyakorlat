@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Welcome</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="header">
+<h1 th:inline="text">Welcome [[${#httpServletRequest.remoteUser}]]!</h1>
+</div>
+
+<div class="content">
+<table class="table">
+	<thead>
+            <tr>
+               <th><a href="games">Games</a></th>
+               <th align="right"><form th:action="@{/logout}" method="post">
+        		<input  class="btn" type="submit" value="Sign Out"/>
+        		</form></th>
+            </tr>
+         </thead>
+</table>
+        
+        
+        
+</div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Games</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="header">
+	<table class="center">
+		<tr>
+			<th ><h1>Games</h1></th>
+		</tr>
+	</table>
+	<hr/>
+	
+	</div>
+	<div class="games">
+	
+	
+		<hr/>
+		<table class="table">
+			<thead>
+            <tr>
+               <th>Name</th>
+               <th>Developer</th>
+               <th>Genre</th>
+               <th>Description</th>
+            </tr>
+         </thead>
+         </thead>
+         <tbody>
+         <tr>
+            <td th:text=${games.name}></td>
+            <td th:text=${games.developer}></td>
+            <td th:text=${games.genre}></td>
+            <td width="25%" th:text=${games.descrtiption}></td>
+         </tr>
+         
+         </tbody>
+         
+		</table>
+
+	</div>
+</body>
+</html>

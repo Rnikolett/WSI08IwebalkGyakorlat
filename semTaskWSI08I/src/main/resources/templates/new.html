@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Add new games</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="header">
+		<table class="center">
+			<tr>
+				<td><h1>Games</h1></td>
+			
+			
+		</table>
+	</div>
+	<div class="content" >
+	
+
+<div class="formDiv">
+	<form action="#" th:action="@{/save}" method="POST" th:object="${games}">
+		<table class="center" id="formTable">
+		<tbody>
+			<tr style="display: none;">
+                    <td><label path="id">Id</label></td>
+                    <td><input path="id" th:field="*{id}" /></td>
+        	 </tr>
+
+			<tr>
+				<td>Game Name</td>
+				<td><input type="text" min="1" max="4" th:field="*{name}"></td>
+			</tr>
+			<tr>
+				<td>Developer</td>
+				<td><input type="text" min="1" max="4" th:field="*{developer}"></td>
+			</tr>
+			<tr>
+				<td>Genre</td>
+				<td><input type="text" th:field="*{genre}"></td>
+			</tr>
+			<tr>
+				<td>Description</td>
+				<td><input type="text" th:field="*{descrtiption}"></td>
+			</tr>
+			
+			<tr>
+				<td align="right" colspan="2">
+					<input type="submit" class="btn" value="Submit">
+				</td>
+				<td align="right" colspan="2">
+					<a href="games"><button class="btn" type="button">CANCEL</button></a>
+				</td>
+			</tr>
+			
+		</tbody>
+		</table>
+		</form>
+		</div>
+	</div>
+
+</body>
+</html>
