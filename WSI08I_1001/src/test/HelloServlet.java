@@ -1,11 +1,11 @@
-// To save as "<CATALINA_HOME>\webapps\helloservlet\WEB-INF\src\test\TestServlet.java"
-package test;
+// To save as "<CATALINA_HOME>\webapps\helloservlet\WEB-INF\src\mypkg\HelloServlet.java"
+package tests;
  
 import java.io.*;
 import javax.servlet.*;
 import javax.servlet.http.*;
  
-public class TestServlet extends HttpServlet {
+public class HelloServlet extends HttpServlet {
     private static final String LOCATION = "C:\\Program Files\\Java\\apache-tomcat-9.0.38-windows-x64\\apache-tomcat-9.0.38\\webapps\\TestServlet\\WEB-INF\\src\\test";
    @Override
    public void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -22,7 +22,7 @@ public class TestServlet extends HttpServlet {
          out.println("<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>");
          out.println("<title>Hello, World</title></head>");
          out.println("<body>");
-         out.println("<h1>Hello, World!</h1>");
+         out.println("<h1>Hello, world!</h1>");  // says Hello
          // Echo client's request information
          out.println("<p>Request URI: " + request.getRequestURI() + "</p>");
          out.println("<p>Protocol: " + request.getProtocol() + "</p>");
