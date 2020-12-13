@@ -1,4 +1,4 @@
-package hu.nqixt9.mavendemo;
+package hu.wsi08i.mavendemo;
 
 /**
  * Hello world!
